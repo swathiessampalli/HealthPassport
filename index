@@ -33,3 +33,219 @@
 
 </body>
 </html>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #2c3e50;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar .nav-links a:hover {
+    color: #1abc9c;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('assets/hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #1abc9c;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #16a085;
+}
+<!-- Features Section -->
+<section id="features" class="features-section">
+    <h2>Key Features</h2>
+    <div class="feature-content">
+        <div class="feature-box">
+            <h3>Unified Medical Records</h3>
+            <p>Store all patient information in one place for a complete view of medical history, past treatments, test results, and more.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Patient Empowerment Tools</h3>
+            <ul>
+                <li>Appointment Scheduling</li>
+                <li>Medication Reminders</li>
+                <li>Health Tracking</li>
+                <li>Secure Sharing</li>
+            </ul>
+        </div>
+        <div class="feature-box">
+            <h3>Doctor’s Dashboard</h3>
+            <p>Access comprehensive patient profiles, efficient note-taking, and AI-powered insights for personalized treatment plans.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Advanced Security</h3>
+            <p>End-to-end encryption, multi-factor authentication, and regular audits ensure patient data is always secure.</p>
+        </div>
+    </div>
+</section>
+/* About Us Section */
+.about-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-box {
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.about-box h3 {
+    font-size: 1.5rem;
+    color: #1abc9c;
+    margin-bottom: 1rem;
+}
+
+/* Features Section */
+.features-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.feature-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.feature-box h3 {
+    font-size: 1.5rem;
+    color: #1abc9c;
+    margin-bottom: 1rem;
+}
+
+.feature-box ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+<!-- How It Works Section -->
+<section id="how-it-works" class="how-it-works-section">
+    <h2>How HealthLink Works</h2>
+    <div class="steps">
+        <div class="step-box">
+            <h3>1. Patient Registration</h3>
+            <p>Create a secure digital health profile with basic information and medical history.</p>
+        </div>
+        <div class="step-box">
+            <h3>2. Data Integration</h3>
+            <p>Seamlessly import existing medical records, test results, and prescriptions.</p>
+        </div>
+        <div class="step-box">
+            <h3>3. Continuous Updates</h3>
+            <p>Doctors add examination summaries and new diagnoses after each visit.</p>
+        </div>
+        <div class="step-box">
+            <h3>4. Instant Access</h3>
+            <p>Authorized healthcare providers can view the complete patient history anytime, anywhere.</p>
+        </div>
+    </div>
+</section>
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content, .feature-content, .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box, .feature-box, .step-box {
+        width: 80%;
+        margin: 1rem 0;
+    }
+
+    .navbar .nav-links li {
+        display: block;
+        margin: 1rem 0;
+    }
+}
